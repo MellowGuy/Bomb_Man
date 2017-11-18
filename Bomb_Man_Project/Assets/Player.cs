@@ -1,6 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Player : MonoBehaviour {
+
+	public enum Facing { Up, Left, Down, Right }
+
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +23,7 @@ public class Player : MonoBehaviour {
 		{
 			transform.position += Vector3.left * Time.deltaTime;
 			Debug.Log("X position= " + transform.position.x);
+
 		}
 		else if (Input.GetKey(KeyCode.RightArrow))
 		{
