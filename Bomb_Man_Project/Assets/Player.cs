@@ -14,6 +14,13 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetInput();
+		//methods to make, ...
+		Movement();
+	}
+
+	private void Movement()
+	{
+		throw new NotImplementedException();
 	}
 
 	private void GetInput()
